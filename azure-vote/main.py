@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 logger.addHandler(AzureEventHandler(
     connection_string='InstrumentationKey=ec4e019d-9d9e-4a2f-8d07-66e92fbe883d')
 )
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 # Metrics
 metrics_exporter = metrics_exporter.new_metrics_exporter(
